@@ -1,12 +1,18 @@
 # ClampPlay-1
 
+[中文文档](README.zh-CN.md) | [English](README.md)
+
 > A modular automatic-instrument execution platform: one controller, interchangeable piano, guitar, and drum modules.
 
 [![Software License: MIT](https://img.shields.io/badge/software-MIT-2ea44f.svg)](LICENSES/MIT.txt)
 [![Hardware License: CERN--OHL--S--2.0](https://img.shields.io/badge/hardware-CERN--OHL--S--2.0-4c1.svg)](LICENSES/CERN-OHL-S-2.0.txt)
 [![Protocol](https://img.shields.io/badge/protocol-14--byte%20binary-4B93E6.svg)](docs/PROTOCOL.md)
 
-ClampPlay-1 separates the reusable control core from the mechanical action required by each instrument. A mobile web app creates timed events; a controller validates and schedules them; detachable modules perform the physical action.
+ClampPlay-1 separates a reusable control core from the different mechanical actions required by each instrument. A mobile web app creates timed events; a controller validates and schedules them; detachable modules perform the physical action.
+
+<p align="center">
+  <img src="docs/assets/mobile-app-home.png" alt="ClampPlay-1 mobile app preview" width="300">
+</p>
 
 - **Piano module:** map a note to a key-position actuator and press the key with a soft contact tip.
 - **Guitar module:** place fretting pressure first, confirm the position, then trigger a separate picking or strumming mechanism.
@@ -14,8 +20,6 @@ ClampPlay-1 separates the reusable control core from the mechanical action requi
 
 > [!WARNING]
 > This repository is an engineering prototype and software demonstration, not a medical device or a validated hardware product. The mobile app and browser consoles default to simulation. Real hardware, instrument contact, and user-facing trials require risk assessment, current limiting, mechanical limits, emergency-stop validation, and staged low-force testing.
-
-![Unified controller and detachable modules](docs/diagrams/06_统一控制器与可拆卸乐器模块图.png)
 
 ## Quick start
 
@@ -69,6 +73,10 @@ Read the complete workflow in [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md).
 
 ## Architecture
 
+<p align="center">
+  <img src="docs/diagrams/06_统一控制器与可拆卸乐器模块图.png" alt="Unified controller and detachable modules" width="900">
+</p>
+
 | Layer | Responsibility | Current state |
 | --- | --- | --- |
 | Mobile PWA | Song events, calibration records, local simulation, Web Serial entry, emergency-stop UI | Implemented for simulation |
@@ -79,7 +87,9 @@ Read the complete workflow in [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md).
 | Guitar module | Fretting mechanism plus separate picking mechanism | Fretting concept model provided; full dual-mechanism hardware remains to be validated |
 | Drum module | Beat-to-beater action | Kick-drive concept model provided; full drum-kit adaptation remains to be validated |
 
-![Execution chains](docs/diagrams/07_钢琴吉他架子鼓自动演奏动作链图.png)
+<p align="center">
+  <img src="docs/diagrams/07_钢琴吉他架子鼓自动演奏动作链图.png" alt="Piano guitar and drum execution chains" width="900">
+</p>
 
 ## Repository layout
 
@@ -100,6 +110,7 @@ clampplay-1/
 │   ├── PROTOCOL.md
 │   ├── SAFETY.md
 │   ├── TESTING.md
+│   ├── assets/
 │   └── diagrams/
 └── LICENSES/
 ```
