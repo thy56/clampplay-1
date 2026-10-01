@@ -11,7 +11,7 @@
 ClampPlay-1 将可复用的控制核心与不同乐器的机械动作拆开：移动端 App 负责曲目和动作事件，控制器负责校验与时序调度，可拆卸模块负责实际的按键、按弦/拨弦或敲击动作。
 
 <p align="center">
-  <img src="https://github.com/thy56/clampplay-1/blob/main/docs/assets/mobile-app-home.png?raw=true" alt="ClampPlay-1 移动端 App 预览" width="300">
+  <img src="docs/assets/mobile-app-home.png" alt="ClampPlay-1 移动端 App 预览" width="300">
 </p>
 
 - **钢琴组件：** 将音符映射到对应键位执行器，以软接触头自动按下琴键。
@@ -74,7 +74,7 @@ docker compose down
 ## 系统架构
 
 <p align="center">
-  <img src="https://github.com/thy56/clampplay-1/blob/main/docs/assets/unified-controller-modules.png?raw=true" alt="统一控制器与可拆卸乐器组件架构图" width="900">
+  <img src="docs/assets/unified-controller-modules.png" alt="统一控制器与可拆卸乐器组件架构图" width="900">
 </p>
 
 | 层级 | 作用 | 当前状态 |
@@ -88,7 +88,7 @@ docker compose down
 | 架子鼓组件 | 节拍到鼓槌的执行流程 | 已提供底鼓传动概念模型；完整架子鼓适配仍需验证 |
 
 <p align="center">
-  <img src="https://github.com/thy56/clampplay-1/blob/main/docs/assets/instrument-execution-chains.png?raw=true" alt="钢琴吉他架子鼓自动演奏动作链图" width="900">
+  <img src="docs/assets/instrument-execution-chains.png" alt="钢琴吉他架子鼓自动演奏动作链图" width="900">
 </p>
 
 ## 目录结构

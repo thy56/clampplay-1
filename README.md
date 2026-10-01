@@ -11,7 +11,7 @@
 ClampPlay-1 separates a reusable control core from the different mechanical actions required by each instrument. A mobile web app creates timed events; a controller validates and schedules them; detachable modules perform the physical action.
 
 <p align="center">
-  <img src="https://github.com/thy56/clampplay-1/blob/main/docs/assets/mobile-app-home.png?raw=true" alt="ClampPlay-1 mobile app preview" width="300">
+  <img src="docs/assets/mobile-app-home.png" alt="ClampPlay-1 mobile app preview" width="300">
 </p>
 
 - **Piano module:** map a note to a key-position actuator and press the key with a soft contact tip.
@@ -74,7 +74,7 @@ Read the complete workflow in [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md).
 ## Architecture
 
 <p align="center">
-  <img src="https://github.com/thy56/clampplay-1/blob/main/docs/assets/unified-controller-modules.png?raw=true" alt="Unified controller and detachable modules" width="900">
+  <img src="docs/assets/unified-controller-modules.png" alt="Unified controller and detachable modules" width="900">
 </p>
 
 | Layer | Responsibility | Current state |
@@ -88,7 +88,7 @@ Read the complete workflow in [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md).
 | Drum module | Beat-to-beater action | Kick-drive concept model provided; full drum-kit adaptation remains to be validated |
 
 <p align="center">
-  <img src="https://github.com/thy56/clampplay-1/blob/main/docs/assets/instrument-execution-chains.png?raw=true" alt="Piano guitar and drum execution chains" width="900">
+  <img src="docs/assets/instrument-execution-chains.png" alt="Piano guitar and drum execution chains" width="900">
 </p>
 
 ## Repository layout
