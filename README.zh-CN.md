@@ -11,7 +11,7 @@
 ClampPlay-1 将可复用的控制核心与不同乐器的机械动作拆开：移动端 App 负责曲目和动作事件，控制器负责校验与时序调度，可拆卸模块负责实际的按键、按弦/拨弦或敲击动作。
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/thy56/clampplay-1@main/docs/assets/mobile-app-home.png" alt="ClampPlay-1 移动端 App 预览" width="300">
+  <img src="https://cdn.jsdelivr.net/gh/thy56/clampplay-1@main/docs/assets/mobile-app-dashboard.png" alt="ClampPlay-1 移动端 App 预览" width="300">
 </p>
 
 - **钢琴组件：** 将音符映射到对应键位执行器，以软接触头自动按下琴键。
