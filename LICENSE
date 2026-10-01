@@ -1,0 +1,7 @@
+ClampPlay-1 uses a split license model.
+
+- Software source under software/ is licensed under the MIT License.
+- Hardware design materials under hardware/, including CAD, 3D models, BOM, mechanical documentation, and diagrams, are licensed under CERN-OHL-S-2.0.
+- Files that are not clearly software or hardware design material inherit the license stated in their containing directory or accompanying notice.
+
+See LICENSES/MIT.txt and LICENSES/CERN-OHL-S-2.0.txt for the complete license texts.

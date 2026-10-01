@@ -1,0 +1,22 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  console-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run protocol and scheduling tests
+        run: python -m unittest discover -s software/console -p test_console.py -v
+      - name: Generate example frames
+        run: |
+          python software/console/console.py --input software/console/demo_chords.json --output /tmp/demo_frames.json
+          python software/console/console.py --drum 0,500,1000

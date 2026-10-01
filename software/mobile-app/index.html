@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0d0e12">
+  <meta name="description" content="ClampPlay-1 mobile performance control application">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>ClampPlay-1</title>
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <button id="menuButton" class="icon-button" aria-label="Menu">☰</button>
+      <div class="brand"><span>CLAMP</span>PLAY-1 <small id="modeBadge">DEMO</small></div>
+      <button id="quickStop" class="stop-button" aria-label="Emergency stop">■</button>
+    </header>
+    <aside id="drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-head"><strong>CLAMPPLAY-1</strong><button id="closeDrawer" class="icon-button">×</button></div>
+      <nav id="navList" class="nav-list"></nav>
+      <div class="drawer-foot"><span id="drawerConnection">Demo device</span><button id="drawerConnect" class="outline-button">Connect</button></div>
+    </aside>
+    <div id="scrim" class="scrim"></div>
+    <main id="screen" class="screen" tabindex="-1"></main>
+    <nav id="bottomNav" class="bottom-nav"></nav>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toastRoot" class="toast-root"></div>
+  <script src="app.js"></script>
+</body>
+</html>
